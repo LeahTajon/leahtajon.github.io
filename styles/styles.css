@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Inter:wght@100;400;600&family=Syne&display=swap');
+
+:root {
+    --font-dark: #515550;
+    --font-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-dark);
+    cursor: pointer;
+}
+
+.menu--burger {
+    display: none;
+}
+
+/*------------ Navigation -------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 4.375rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+nav #logo {
+    margin: 1rem 2rem;
+    width: 55px;
+}
+
+nav .nav--links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
