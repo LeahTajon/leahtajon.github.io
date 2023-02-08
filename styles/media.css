@@ -5,11 +5,12 @@
 @media only screen 
 and (max-width : 320px)
 {
+    /*--- Navigation ---*/
     .menu-list {
         display: block; 
         width: 100%;
         position: absolute;
-        top: 4rem;
+        top: 4.8rem;
         left: -5rem;
 
         text-align: center;
@@ -29,6 +30,7 @@ and (max-width : 320px)
     }
 
     li a.menu-item:hover {
+        border: none;
         background-color: var(--green-light);
         color: var(--font-dark);
         text-decoration: none;
@@ -37,7 +39,30 @@ and (max-width : 320px)
     li a.open {
         display: block;
     }
-   
+
+    /*--- Hero Section ---*/
+    .hero-content {
+        width: 100%;
+        /* margin: 0 0 0 2rem; */
+        margin: 2rem;
+        
+    }
+    .hero-greeting {
+        font-size: .8rem;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-desc {
+        font-size: .9rem;
+        width: 100%;
+    }
 }
 
 /* Smartphones (landscape) ---------------- */
@@ -49,7 +74,7 @@ and (max-width : 767px)
         display: block; 
         width: 100%;
         position: absolute;
-        top: 4rem;
+        top: 4.8rem;
         left: -5rem;
 
         text-align: center;
@@ -60,6 +85,7 @@ and (max-width : 767px)
     #menu-icon {
         display: block;
         margin: 0 2rem;
+       
     }
 
     li a.menu-item {
@@ -69,6 +95,7 @@ and (max-width : 767px)
     }
 
     li a.menu-item:hover {
+        border: none;
         background-color: var(--green-light);
         color: var(--font-dark);
         text-decoration: none;
@@ -76,6 +103,28 @@ and (max-width : 767px)
 
     li a.open {
         display: block;
+    }
+
+    /*--- Hero Section ---*/
+    .hero-content {
+        width: 100%;
+        margin: 0 0 0 3rem;
+    }
+    .hero-greeting {
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-desc {
+        font-size: .9rem;
+        width: 90%;
     }
 }
 
