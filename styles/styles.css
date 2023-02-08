@@ -3,6 +3,9 @@
 :root {
     --font-dark: #515550;
     --font-white: #fff;
+    --green-dark: #727241;
+    --green-light: #BFD74E;
+    --background: #838b81;
 }
 
 * {
@@ -25,31 +28,41 @@ a {
     cursor: pointer;
 }
 
-.menu--burger {
-    display: none;
-}
+/*--------- Navigation -----------*/
 
-/*------------ Navigation -------------*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    height: 4.375rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
 }
 
 nav #logo {
-    margin: 1rem 2rem;
-    width: 55px;
+    margin: .5rem 1rem;
 }
 
-nav .nav--links {
+#menu-icon {
+    display: none;
+}
+
+.menu-list {
     display: flex;
-    align-items: center;
     gap: 3rem;
+    margin: 0 5rem;
+}
+
+.menu-list a {
+    font-weight: 600;
+    font-size: 1.063rem;
+    letter-spacing: 0.1rem;
     
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    padding: .2rem;
+}
+
+li a.menu-item:hover {
+    border-bottom: 2.5px solid var(--green-dark);
+    color: var(--green-dark);
 }

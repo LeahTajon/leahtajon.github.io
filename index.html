@@ -13,15 +13,32 @@
 <body>
     <header>
         <nav>
-            <img src="./images/png/logo-no-background.png" alt="Logo of Leah Tajon" width="45" id="logo"/>
-            <ul class="nav--links">
-                <li><a href="#" class="menu--link">Home</a></li>
-                <li><a href="#" class="menu--link">About</a></li>
-                <li><a href="#" class="menu--link">Portfolio</a></li>
-                <li><a href="#" class="menu--link">Contact</a></li>
-                <li><a href="#"><img src="./images/hamburger-menu.png" class="menu--burger"></a></li>
+            <!-- Logo -->
+            <a href="#" id="logo"><img src="./images/png/logo-no-background.png" alt="Leah Logo" width="45" loading="lazy"></a>
+           
+            <!-- Menu List -->
+            <ul class="menu-list" id="active">
+                <li >
+                    <a href="#"  class="menu-item">Home</a>
+                </li>
+                <li>
+                    <a href="#"  class="menu-item">About</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Contact</a>
+                </li>
             </ul>
+
+             <!-- Hamburger Menu -->
+             <a href="#" id="menu-icon">
+                <img src="./images/hamburger-menu.png" alt="hamburger icon" width="30">
+            </a>
+            
         </nav>
     </header>
+<script src="./scripts/menu-icon.js"></script>
 </body>
 </html>
