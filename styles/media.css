@@ -245,15 +245,13 @@ and (max-width : 767px)
 
     .skills-content p {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 0 1.5rem 0;
         
         text-align: center;
         font-size: 1.02rem;
         line-height: 1.5rem;
         letter-spacing: 0.05em;
-        padding: 0 1.8em;
-
-        border: 1px solid red;
+        padding: 0 1.5rem;
     }
 
     .skills-icon {
@@ -318,7 +316,7 @@ and (orientation : portrait)
         font-size: 1.02rem;
         line-height: 1.5rem;
         letter-spacing: 0.05em;
-        padding: 0 1.8em;
+        padding: 0 1.8em 1.5rem 0;
     }
 
     .skills-icon {
@@ -378,7 +376,7 @@ and (orientation : landscape)
         font-size: 1.02rem;
         line-height: 1.5rem;
         letter-spacing: 0.05em;
-        padding: 0 1.8em;
+        padding: 0 1.8em 1.5rem 0;
     }
 
     .skills-icon {
@@ -429,7 +427,7 @@ and (min-width : 1025px)
         font-size: 1.1rem;
         line-height: 1.8rem;
         letter-spacing: 0.05em;
-        padding: 0 1.8em;
+        padding: 0 1.8em 2.3rem 0;
     }
 
     .skills-icon {
