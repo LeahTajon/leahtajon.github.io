@@ -32,6 +32,19 @@ a {
     cursor: pointer;
 }
 
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
 .btn {
     background-color: var(--green-light);
     border:none;
@@ -189,9 +202,12 @@ li a.menu-item:hover {
     padding: 0 0 1rem 0;
 }
 
-#skills, 
-#contact {
+#skills {
     background-color: var(--background);
+}
+
+#contact {
+    background: #262626;
 }
 
 .dark {
@@ -199,7 +215,9 @@ li a.menu-item:hover {
 }
 
 .about-content,
-.skills-content {
+.skills-content,
+.portfolio-content,
+.contact-content {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -262,3 +280,118 @@ li a.menu-item:hover {
     max-width: 100%;
 }
 
+/*--------- Portfolio -----------*/
+.portfolio-content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 2rem 0 3.5rem 0;
+}
+
+.portfolio-content .col-1,
+.portfolio-content .col-2,
+.portfolio-content .col-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portfolio-content .box-1 {
+    width: 18.75rem;
+    height: 14.813rem;
+
+    border-radius: 5px;
+}
+
+.portfolio-content .box-2 {
+    width: 18.75rem;
+    height: 29.125rem;
+
+    border-radius: 5px;
+}
+
+.portfolio-content .col-1 .box-1 {
+    background: #BFCF7F;
+}
+
+.portfolio-content .col-1 .box-2 {
+    background: #515550;
+}
+
+.portfolio-content .col-2 .box-3 {
+    width: 18.75rem;
+    height: 11.188rem;
+
+    background: #838B81;
+    border-radius: 5px;
+}
+
+.portfolio-content .col-2 .box-4 {
+    width: 18.75rem;
+    height: 32.75rem;
+
+    background: #727241;;
+    border-radius: 5px;
+}
+
+.portfolio-content .col-3 .box-1 {
+    background: #B9A08A;
+}
+
+.portfolio-content .col-3 .box-2 {
+    background: #757575;
+}
+
+/*--------- Contact -----------*/
+/* .about-content,
+.skills-content,
+.portfolio-content,
+.contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+} */
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 90%;
+    padding: 12px;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit] {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.contact-content .contact-info {
+    width: 100%;
+}
+
+.contact-content .contact-info p {
+    color: var(--font-white);
+    margin: 0;
+    padding: 0 2rem 0 0;
+
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.08em;
+}
+
+.contact-content .contact-info h4 {
+    color: var(--font-white);
+    font-size: 1.05rem;
+    font-weight: 400;
+
+    margin: 1rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+
+}

@@ -136,6 +136,58 @@
         padding: 1rem 0 0 0;
         margin: 0 auto;
     }
+
+    /*--- Portfolio Section ---*/
+    .portfolio-content {
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .portfolio-content .col-1,
+    .portfolio-content .col-2,
+    .portfolio-content .col-3 {
+        gap: .8rem;
+    }
+
+    .portfolio-content .col-1 .box-1,
+    .portfolio-content .col-1 .box-2,
+    .portfolio-content .col-2 .box-3,
+    .portfolio-content .col-2 .box-4,
+    .portfolio-content .col-3 .box-1,
+    .portfolio-content .col-3 .box-2 {
+        height: 18.75rem;
+    }
+
+    /*--- Contact ---*/
+    .contact-content {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .contact-content .contact-info {
+        margin: 1rem 0 0 1.2rem;
+    }
+
+    .contact-content .contact-info p {
+        font-size: .95rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-content .contact-info img {
+        width: 1.5rem;
+        height: 1.5rem;;
+    }
 }
 
 /* Smartphones (landscape) ---------------- */
@@ -263,6 +315,57 @@ and (max-width : 767px)
         justify-content: center;
         align-items: center;
     }
+
+    /*--- Portfolio Section ---*/
+    .portfolio-content {
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .portfolio-content .col-1,
+    .portfolio-content .col-2,
+    .portfolio-content .col-3 {
+        gap: .8rem;
+    }
+
+    .portfolio-content .col-1 .box-1,
+    .portfolio-content .col-1 .box-2,
+    .portfolio-content .col-2 .box-3,
+    .portfolio-content .col-2 .box-4,
+    .portfolio-content .col-3 .box-1,
+    .portfolio-content .col-3 .box-2 {
+        height: 18.75rem;
+    }
+
+    /*--- Contact ---*/
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .contact-content .contact-info {
+        margin: 1rem 0;
+    }
+
+    .contact-content .contact-info p {
+        font-size: .95rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-content .contact-info img {
+        width: 1.5rem;
+        height: 1.5rem;;
+    }
 }
 
 
@@ -328,6 +431,58 @@ and (orientation : portrait)
         justify-content: center;
         align-items: center;
     }
+
+    /*--- Portfolio ---*/
+    .portfolio-content {
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .portfolio-content .col-1,
+    .portfolio-content .col-2,
+    .portfolio-content .col-3 {
+        gap: .8rem;
+    }
+
+    .portfolio-content .col-1 .box-1,
+    .portfolio-content .col-1 .box-2,
+    .portfolio-content .col-2 .box-3,
+    .portfolio-content .col-2 .box-4,
+    .portfolio-content .col-3 .box-1,
+    .portfolio-content .col-3 .box-2 {
+        height: 18.75rem;
+    }
+
+    /*--- Contact ---*/
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
+
+    .contact-content .contact-info {
+        margin: 1rem 0;
+    }
+
+    .contact-content .contact-info p {
+        font-size: .95rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-content .contact-info img {
+        width: 1.5rem;
+        height: 1.5rem;;
+    }
+
 }
 
 
@@ -388,6 +543,41 @@ and (orientation : landscape)
         justify-content: center;
         align-items: center;
     }
+
+    /*--- Portfolio ---*/
+    .portfolio-content {
+        gap: .8rem;
+        width: 100%;
+    }
+
+    .portfolio-content .col-1,
+    .portfolio-content .col-2,
+    .portfolio-content .col-3 {
+        gap: .8rem;
+    }
+
+    .portfolio-content .col-1 .box-1,
+    .portfolio-content .col-1 .box-2,
+    .portfolio-content .col-2 .box-3,
+    .portfolio-content .col-2 .box-4,
+    .portfolio-content .col-3 .box-1,
+    .portfolio-content .col-3 .box-2 {
+        height: 18.75rem;
+    }
+
+    /*--- Contact ---*/
+    .contact-content .contact-info p,
+    .contact-content .contact-info h4 {
+        font-size: 1.02rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-content .contact-info img {
+        width: 1rem;
+        height: 1rem;
+    }
+
 }
 
 /* Old Desktops and laptops ------------------ */
@@ -438,6 +628,19 @@ and (min-width : 1025px)
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    /*--- Contact ---*/
+    .contact-content .contact-info p,
+    .contact-content .contact-info h4 {
+        font-size: 1.02rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    .contact-content .contact-info img {
+        width: 1rem;
+        height: 1rem;
     }
 }
 
