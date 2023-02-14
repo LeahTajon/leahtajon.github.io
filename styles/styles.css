@@ -74,7 +74,7 @@ nav {
 }
 
 nav #logo img{
-    margin: .5rem 1rem;
+    margin: .5rem 2rem;
     width: 50px;
 }
 
@@ -207,7 +207,7 @@ li a.menu-item:hover {
 }
 
 #contact {
-    background: #262626;
+    background: #262626;   
 }
 
 .dark {
@@ -344,16 +344,6 @@ li a.menu-item:hover {
 }
 
 /*--------- Contact -----------*/
-/* .about-content,
-.skills-content,
-.portfolio-content,
-.contact-content {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
-} */
 
 input[type=text],
 input[type=email],
@@ -368,6 +358,7 @@ textarea {
 input[type=submit] {
     width: 90%;
     border-radius: 5px;
+    margin: 0 0 3rem 0;
 }
 
 .contact-content .contact-info {
@@ -393,5 +384,16 @@ input[type=submit] {
     gap: 1rem;
     display: flex;
     align-items: center;
+}
 
+/*--------- Footer -----------*/
+footer {
+    position: relative;
+    top: 4.7rem;
+    height: 2.5rem;
+}
+
+footer h4 {
+    text-align: center;
+    padding: 1.8rem;
 }
