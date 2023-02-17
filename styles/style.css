@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Merriweather&family=Montserrat&family=Syne:wght@400;700&display=swap');
+
+:root {
+    --font-color-pink: #EB455F;
+    --font-color-black-2: #323232;
+
+    --bgcolor-blue: #B4FFC9;
+    --bgcolor-light-purple: #CDB4FF;
+    --bgcolor-purple: #8758FF;
+    --bgcolor-peach: #EE6F57;
+    --bgcolor-pink: #EB455F;
+    --bgcolor-white-1: #F0EFEA;
+    --bgcolor-white-2: #FAFAFA;
+
+    --accent-color-black: #000;
+    --accent-color-white: #fff;
+
+    --border-color: #383838;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bgcolor-white-2);
+    margin: .5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--- Navbar ---*/
+nav {
+    display: flex;
+    align-items: center;
+    background: var(--bgcolor-white-1);
+    height: 80px;
+    border: 2px solid var(--border-color);
+}
+
+nav img {
+    width: 60px;
+    margin: .3rem 3rem;
+}
+
+.menu-list {
+    display: flex;
+    gap: 2.5rem;
+
+    margin-right: auto;
+}
+.menu-list a {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+    color: var(--accent-color-black);
+}
+
+.menu-icon img {
+    /* display: none; */
+    width: 45px;
+}
+
+/*--- Hero ---*/
+.hero {
+    height: 20rem;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+}
+
+.hero-content {
+    width: 90%;
+    margin: 0 auto;
+}

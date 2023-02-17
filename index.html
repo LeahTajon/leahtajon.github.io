@@ -5,150 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/media.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Home</title>
+    <title>My Portfolio - Home</title>
 </head>
 <body>
     <header>
+        <!-- Navbar -->
         <nav>
-            <!-- Logo -->
-            <a href="#" id="logo"><img src="./images/png/logo-no-background.png" alt="Leah Logo" width="45" loading="lazy" ></a>
-           
-            <!-- Menu List -->
-            <ul class="menu-list" id="active">
-                <li >
-                    <a href="#"  class="menu-item">Home</a>
-                </li>
-                <li>
-                    <a href="#about"  class="menu-item">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="menu-item">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact" class="menu-item">Contact</a>
-                </li>
-            </ul>
-
-             <!-- Hamburger Menu -->
-             <a href="#" id="menu-icon">
-                <img src="./images/hamburger-menu.png" alt="hamburger icon" width="30">
-            </a>
+            <img src="./images/logo.webp" alt="Leah Tajon Logo" width="50">
+            <div class="menu-list">
+                <a href="#">ABOUT</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="menu-icon">
+                <img src="./images/game-icons_hamburger-menu.png" alt="black menu bars" class="hamburger">
+            </div>
         </nav>
-        <!-- Hero Section -->
+        <!-- Navbar -->
+
+        <!-- Hero -->
         <div class="hero">
             <div class="hero-content">
-                <h3 class="hero-greeting">HELLO!</h3>
-                <h1 class="hero-title">I'm Leah Tajon</h1>
-                <h2 class="hero-subtitle">Web Frontend Developer</h2>
-                <p class="hero-desc">A passionate web developer with a focus on creating clean, user-friendly websites.</p>
-                <button class="btn">Download CV</button>
+                <h2>Hello!</h2>
             </div>
         </div>
-        <!-- Hero Section -->
+        <!-- Hero -->
     </header>
-    <main>
-        <!-- About Me -->
-        <section class="row" id="about">
-            <h2 class="title-heading">About Me</h2>
-            <h3 class="title-subheading">A small introduction about myself</h3>
-
-            <div class="about-content">
-                <img src="./images/profile-photo.jpg" alt="Leah Photo" loading="lazy">
-                <div class="about-info">
-                    <p>My name is Leah Tajon and I love building beautiful and functional websites. I have a strong understanding of various programming languages and web technologies. In addition to my web development skills, I also have experience in administration management. When I am not coding, you can find me reading, swimming, or exploring new restaurants. </p>
-                </div>
-            </div>
-        </section>
-        <!-- About Me -->
-
-        <!-- Skills and Experience -->
-        <section class="row" id="skills">
-            <h2 class="title-heading dark">Skills & Experience</h2>
-            <h3 class="title-subheading dark">I can say I'm quite good at</h3>
-            
-            <div class="skills-content">
-                <p>I am well-versed in web technologies such as UI/UX design, Python, and React JS. I have taken several courses and completed various projects that have allowed me to gain a solid understanding of these technologies. I am constantly seeking opportunities to improve my skills and have worked on personal projects to further develop my abilities. I am eager to apply my knowledge and enthusiasm to real-world projects and continue to grow as a web developer.</p>
-                <div class="skills-icon">
-                    <img src="./images/html-logo.png" alt="HTML">
-                    
-                    <img src="./images/css-logo.png" alt="CSS">
-                        
-                    <img src="./images/javascript-logo.png" alt="JavaScript">
-                       
-                    <img src="./images/python-logo.png" alt="Python">
-                       
-                    <img src="./images/react-logo.png" alt="React">
-                        
-                    <img src="./images/figma-logo.png" alt="Figma">
-            
-                </div>
-            </div>
-        </section>
-        <!-- Skills and Experience -->
-
-        <!-- Portfolio -->
-        <section class="row" id="portfolio">
-            <h2 class="title-heading">Portfolio</h2>
-            <h3 class="title-subheading">Check my works</h3>
-            <div class="portfolio-content">
-                <div class="col-1">
-                    <div class="box-1"></div>
-                    <div class="box-2"></div>
-                </div>
-                <div class="col-2">
-                    <div class="box-3"></div>
-                    <div class="box-4"></div>
-                </div>
-                <div class="col-3">
-                    <div class="box-1"></div>
-                    <div class="box-2"></div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio -->
-        
-        <!-- Contact -->
-        <section class="row" id="contact">
-            <h2 class="title-heading dark">Contact</h2>
-            <h3 class="title-subheading dark">Get in touch with me</h3>
-            <div class="contact-content">
-                <div class="form">
-                    <form>
-                        <input type="text" id="name" name="name" placeholder="Full Name">
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <input type="submit" value="Send Message" class="btn">
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <p>
-                        Thank you for visiting my website. If you would like to get in touch, please feel free to reach out to me through the contact information provided. I am always open to hearing about new opportunities and would be happy to discuss how I can contribute to your projects. I look forward from you soon.
-                    </p>
-
-                    <h4>
-                        <img src="./images/icon-location.png" alt="Location pin">
-                        Guam, USA
-                    </h4>
-                    <h4>
-                        <img src="./images/icon-whatsapp.png" alt="Whatsapp Logo">
-                        +1(671) 689-5324
-                    </h4>
-                    <h4>
-                        <img src="./images/icon-email.png" alt="Envelope icon">
-                        leahtajon@gmail.com
-                    </h4>
-                </div>
-            </div>
-        </section>
-        <!-- Contact -->
-    </main>
-    <footer class="footer">
-        <h4>Copyright &#169; 2023 Designed by Leah Tajon</h4>
-    </footer>
-<script src="./scripts/menu-icon.js"></script>
 </body>
 </html>
