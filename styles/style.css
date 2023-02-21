@@ -282,7 +282,16 @@ main {
     grid-area: one;
     height: 300px;
     border: 2px solid var(--font-color-black-2);
-    background: var(--bgcolor-light-purple);
+
+    background: 
+    url('https://content.codecademy.com/projects/make-a-website/lesson-4/jumbotron.jpg'), 
+    linear-gradient(
+        rgba(205, 180, 255, 0.45), 
+        rgba(205, 180, 255, 0.45));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .portfolio-contents .two {
@@ -318,6 +327,44 @@ main {
     height: 400px;
     border: 2px solid var(--font-color-black-2);
     background: var(--bgcolor-pink);
+}
+
+/* portfolio - hover - overlay*/
+.card-container {
+    position: relative;
+}
+
+.card-container img {
+    opacity: 1;
+    display: block;
+    max-width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.card-container .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.card-container:hover img {
+    opacity: 0.4;
+}
+
+.card-container:hover .hover-text {
+    opacity: 1;
+}
+
+.card-container .caption {
+    background-color: rgb(18, 53, 131);
+    color: white;
+    border-radius: 6px;
+    font-weight: bolder;
 }
 
 /*--- contact ---*/
