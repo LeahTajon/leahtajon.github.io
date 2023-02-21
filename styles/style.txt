@@ -123,7 +123,7 @@ nav img {
 
 /*--- main ---*/
 main {
-    
+ 
     position: relative;
 }
 

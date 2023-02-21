@@ -24,7 +24,6 @@ body {
     margin: 0 auto;
     
     border: 2px solid var(--font-color-black-2);
-    
 }
 
 header {
@@ -37,74 +36,86 @@ a {
 }
 
 /*--- Navbar ---*/
-nav {
-    overflow: hidden;
+.navbar {
+    min-height: 70px;
     display: flex;
-    align-items: center; 
-    background-color: var(--bgcolor-white-1);
-    height: 80px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     
-    z-index: 1000;
-    border: 2px solid var(--font-color-black-2);
-   
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    padding: 0 2rem;
+    background-color: var(--bgcolor-white-1);
+    border: 2px solid var(--border-color);
 }
 
-nav img {
-    width: 50px;
-    margin: .3rem 3rem;
-    margin-right: auto;
-}
-
-.menu-list {
+.nav-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
 
-.menu-list a {
+.logo img {
+    width: 50px;
+    margin: .5rem 0;
+}
+
+.nav-link {
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
-    color: var(--accent-color-black);
-    padding: 1.7rem 2rem;
+    transition: 0.5s ease;
 }
 
-.menu-list a:hover {
-    background-color: var(--font-color-pink);
-    transition: .5s ease;
+.nav-link:hover {
+    color: var(--bgcolor-pink);
+    letter-spacing: 0.3em;
 }
 
-.menu-icon img {
+.hamburger {
     display: none;
-    width: 35px;
     cursor: pointer;
 }
 
-
-/*--- Hero ---*/
-.hero {
-    height: 23rem;
-    position: relative;
-    top: 5rem;
-    width: 85%;
-    margin: 0 auto;
-    
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--accent-color-black);
 }
 
-.my-photo img {
+/*--- Hero Section ---*/
+.hero {
+    height: 30rem;
+    width: 85%;
+
+    margin: 0 auto;
+    position: relative;
+    top: 5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.my-photo img{
     display: none;
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    border: 2px solid var(--accent-color-black);
     border-radius: 50%;
+    border: 2px solid var(--accent-color-white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .hero-content {
@@ -121,30 +132,34 @@ nav img {
 }
 
 .hero-content h1 {
-    margin: .1em 0 0 0;
+    margin: .95rem 0 0 0;
     font-family: 'Merriweather', serif;
     font-weight: bold;
     font-size: 2.5rem;
     letter-spacing: 0.05em;
 
-    color: var(--font-color-pink);
+    color: var(--bgcolor-pink);
 }
 
 .hero-content p {
     font-family: 'Manrope', sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
+    letter-spacing: 0.05em;
     color: var(--font-color-black-2);
 }
 
 .hero-photo img {
-    width: 30rem;
+    width: 500px;
+}
+
+.social-media-2 {
+    display: none;
 }
 
 /*--- main ---*/
-main {
-    margin: 4rem 1.4rem 1.4rem 1.4rem;
-    
+main { 
+    position: relative;
 }
 
 .row {
@@ -162,9 +177,9 @@ main {
 
 .row-bar {
     display: block;
-    margin: 14px 0;
-    width: 64px;
-    height: 2px;
+    margin: 0.875rem 0 0 0;
+    width: 4rem;
+    height: 3px;
     background-color: var(--font-color-black-2);
 }
 
@@ -236,29 +251,25 @@ main {
     gap: .35rem;
 }
 
-.skills {
-    border: 2px solid var(--accent-color-black);
+.about-contents .col-2 h4 {
+    border: 2px solid var(--font-color-black-2);
     border-radius: 60px;
     padding: .2rem 1.5rem;
 
     font-family: 'Manrope', serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.85rem;
-    letter-spacing: .08em;
-    color: var(--accent-color-black);
+    letter-spacing: 0.05em;
 }
 
-
-/*--- about me ---*/
+/*--- portfolio ---*/
 .portfolio-contents {
-    margin: 3.5rem 0;
-    
+    margin: 3rem 0;
+
     display: grid;
     gap: 1rem;
-
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
+    grid-template-rows: auto;
     grid-template-areas: 
         "one two three"
         "one two three"
@@ -267,53 +278,56 @@ main {
         "four five six";
 }
 
-.one {
+.portfolio-contents .one {
     grid-area: one;
-    height: 18.75rem;
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-light-purple);
+    height: 300px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-light-purple);
 }
 
-.two { 
+.portfolio-contents .two {
     grid-area: two;
-
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-blue);
+    height: 400px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-blue);
 }
 
-.three {
+.portfolio-contents .three {
     grid-area: three;
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-purple);
+    height: 300px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-purple);
 }
 
-.four {
+.portfolio-contents .four {
     grid-area: four;
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-peach);
+    height: 400px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-peach);
 }
 
-.five {
-
+.portfolio-contents .five {
     grid-area: five;
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-light-purple);
+    height: 300px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-light-purple);
 }
 
-.six {
+.portfolio-contents .six {
     grid-area: six;
-    border: 2px solid var(--accent-color-black);
-    background-color: var(--bgcolor-pink);
+    height: 400px;
+    border: 2px solid var(--font-color-black-2);
+    background: var(--bgcolor-pink);
 }
 
-/*--- Contact ---*/
+/*--- contact ---*/
 .contact-contents {
-    margin: 3.5rem 0;
     display: flex;
+    margin: 3rem 0;
     gap: 1rem;
 }
 
-.contact-form, 
+.contact-form,
 .contact-info {
     width: 50%;
 }
@@ -322,23 +336,22 @@ main {
     display: block;
 }
 
-#fname,
-#email,
-#subject,
-#message {
-    width: 90%;
-    padding: 1rem .5rem;
+.contact-form form #fname,
+.contact-form form #email,
+.contact-form form #subject,
+.contact-form form #message {
+    padding: 15px;
     margin: 0 0 .5rem 0;
+    width: 90%;
 
+    background: var(--bgcolor-white-1);
     border: 2px solid var(--font-color-black-2);
-    background-color: var(--bgcolor-white-1);
 }
 
 ::placeholder {
-    color: var(--bgcolor-purple);
-    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.05em;
+    font-weight: bold;
+    color: var(--bgcolor-purple);
 }
 
 .contact-info h3 {
@@ -348,64 +361,71 @@ main {
     line-height: 1.5rem;
 
     color: var(--font-color-pink);
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.8rem 0;
 }
 
 .contact-info p {
     font-family: 'Manrope', sans-serif;
-    font-weight: bold;
     font-size: .85rem;
+    font-weight: bold;
+    line-height: 145%;
     letter-spacing: 0.05em;
 
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.8rem 0;
 }
 
 .contact-info h4 {
     display: flex;
     align-items: center;
-    
 
-    letter-spacing: 0.05em;
     font-family: 'Manrope', sans-serif;
     font-size: .85rem;
     font-weight: bold;
+    line-height: 145%;
+    letter-spacing: 0.05em;
 }
 
 .contact-info h4 img {
-    width: 25px;
-    margin: 0 1rem 0 .5rem;
-    padding: 1px 0;
+    width: 30px;
+    margin-right: 1rem;
 }
 
-/*--- Footer ---*/
+/*--- footer ---*/
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
-    color: var(--bgcolor-white-2);
     font-family: 'Syne', sans-serif;
-    font-weight: bold;
-    font-size: .85rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05em;
-
-    background-color: var(--accent-color-black);
-    padding: 0 2rem;
+    background: var(--accent-color-black);
+    color: var(--accent-color-white);
+    padding: 2rem 1rem;
 }
 
-footer .social-media {
+.social-media {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-
-    padding: 2rem;
 }
 
-footer .sm-icon {
+.sm-icon {
+    border: 2px solid var(--accent-color-white);
     border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#facebook, #github {
-    width: 30px;
+.sm-icon i {
+    font-size: 2rem;
+}
+
+.social-media-2 {
+    display: none;
 }

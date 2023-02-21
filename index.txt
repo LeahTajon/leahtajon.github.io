@@ -10,40 +10,28 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>My Portfolio - Home</title>
 </head>
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar">
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <img src="./images/logo.webp" alt="Leah Tajon logo" width="50">
-            </a>
-
-            <!-- links -->
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+        <nav>
+            <img src="./images/logo.webp" alt="Leah Tajon Logo" width="50">
+            <ul class="menu-list">
+                <li>
+                    <a href="#" class="menu-item">ABOUT</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
+                
+                <li>
+                    <a href="#" class="menu-item">PORTFOLIO</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                <li>
+                    <a href="#" class="menu-item">CONTACT</a>
                 </li>
             </ul>
-
-            <!-- hamburger icon -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            
+            <a href="#" id="menu-icon">
+                <img src="./images/game-icons_hamburger-menu.png" alt="black menu bars" class="hamburger">
+            </a>
         </nav>
         <!-- Navbar -->
 
@@ -62,23 +50,10 @@
             <div class="hero-photo">
                 <img src="/images/Man programmer writing code on a laptop.png" alt="programmer retro illustration" width="300" loading="lazy">
             </div>
-
-            <div class="social-media-2">
-                <div class="social-contents">
-                    <a href="#" class="sm-icon">
-                        <i class='fa fa-facebook'></i>
-                    </a>
-                    <a href="#" class="sm-icon">
-                        <i class='fa fa-linkedin'></i>
-                    </a>
-                    <a href="#" class="sm-icon">
-                        <i class='fa fa-github-alt'></i>
-                    </a>
-                </div>
-            </div>
-            
-        <!-- Hero -->     
+        </div>
+        <!-- Hero -->
     </header>
+
     <main>
         <!-- About Me -->
         <section class="row">
@@ -127,7 +102,7 @@
             </div>
         </section>
         <!-- Portfolio -->
-
+        
         <!-- Contact -->
         <section class="row">
             <h2 class="row-heading">Contact</h2>
@@ -160,22 +135,22 @@
         </section>
         <!-- Contact -->
     </main>
+
     <footer>
         <h4>&#169; Copyright 2023</h4>
         <div class="social-media">
             <a href="#" class="sm-icon">
-                <i class='fa fa-facebook'></i>
+                <img src="images/icon-facebook.png" alt="Facebook icon" id="facebook">
             </a>
             <a href="#" class="sm-icon">
-                <i class='fa fa-linkedin'></i>
+                <img src="images/icon-linkedin.png" alt="Whatsapp icon" id="linkedin">
             </a>
             <a href="#" class="sm-icon">
-                <i class='fa fa-github-alt'></i>
+                <img src="images/icon-github.png" alt="Github icon" id="github">
             </a>
         </div>
         <h4>Designed by Leah Tajon</h4>
     </footer>
-    
 <script src="./script/menu-icon.js"></script>
 </body>
 </html>
