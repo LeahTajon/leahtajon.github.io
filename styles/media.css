@@ -481,7 +481,7 @@ and (orientation : portrait)
     .hero-content h2 {
         font-size: 1.3rem;
     }
-
+    
     .hero-content h1 {
         font-size: 1.9rem;
     }
@@ -489,6 +489,8 @@ and (orientation : portrait)
     .hero-content p {
         font-size: 1.2rem;  
     }
+
+    
     .hero-photo {
         width: 50%;
     }
@@ -520,7 +522,55 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape)
 {   
-    
+    /*--- Hero Section ---*/
+    .hero {
+        height: 23rem;
+        align-items: center;
+    }
+    .hero-content {
+        width: 50%;
+        height: auto;
+        border: 1;
+    }
+
+    /* .hero-content h2 {
+        font-size: 1.3rem;
+    } */
+
+    .hero-content h2 {
+        font-size: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;  
+    }
+
+    .hero-photo {
+        width: 50%;
+    }
+
+    .hero-photo img {
+        max-width: 100%;
+    }
+
+     /*--- hover ---*/
+     .card-container .caption {
+        font-size: 1rem;
+    }
+
+    .card-container .description {
+        font-size: .75rem;
+        padding: 0 .5rem .5rem .5rem;
+    }
+
+    .card-container .visit-link {
+        font-size: .75rem;
+        padding: .2rem .6rem;
+    }
 }
 
 /* Old Desktops and laptops ------------------ */
@@ -531,7 +581,6 @@ and (min-width : 1025px)
     .row {
         width: 900px;
     }
-
 }
 
 /* Desktops ------------------ */
