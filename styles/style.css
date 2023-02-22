@@ -295,14 +295,18 @@ main {
     grid-area: two;
     height: 400px;
     border: 2px solid var(--font-color-black-2);
-    background: var(--bgcolor-blue);
+    background: url('https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .portfolio-contents .three {
     grid-area: three;
     height: 300px;
     border: 2px solid var(--font-color-black-2);
-    background: var(--bgcolor-purple);
+    
+    
 }
 
 .portfolio-contents .four {
@@ -396,6 +400,10 @@ main {
 .one .hover-text,
 .six .hover-text {
     background-color: var(--bgcolor-pink);
+}
+
+.two .hover-text {
+    background-color: var(--bgcolor-blue);
 }
 
 .four .hover-text {
