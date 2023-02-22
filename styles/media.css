@@ -182,6 +182,20 @@
         height: 200px;
     }
 
+    /*--- hover ---*/
+    .card-container .caption {
+        font-size: 1rem;
+    }
+
+    .card-container .description {
+        font-size: .75rem;
+        padding: 0 .5rem .5rem .5rem;
+    }
+
+    .card-container .visit-link {
+        font-size: .75rem;
+        padding: .2rem .6rem;
+    }
      /*--- contact ---*/
     .contact-contents {
         flex-direction: column-reverse;
@@ -397,6 +411,21 @@ and (max-width : 767px)
         height: 200px;
     }
 
+     /*--- hover ---*/
+     .card-container .caption {
+        font-size: 1rem;
+    }
+
+    .card-container .description {
+        font-size: .75rem;
+        padding: 0 .5rem .5rem .5rem;
+    }
+
+    .card-container .visit-link {
+        font-size: .75rem;
+        padding: .2rem .6rem;
+    }
+
     /*--- contact ---*/
     .contact-contents {
         flex-direction: column-reverse;
@@ -414,6 +443,10 @@ and (max-width : 767px)
         width: 100%;
     }
 
+    .contact-contents {
+        flex-direction: column-reverse;
+    }
+
     /*--- footer ---*/
     .social-media {
         display: none;
@@ -424,8 +457,7 @@ and (max-width : 767px)
         margin: 8rem 0 0 0;
         font-size: .9rem;
     }
-
-
+   
 }
 
 
@@ -463,6 +495,21 @@ and (orientation : portrait)
 
     .hero-photo img {
         max-width: 100%;
+    }
+
+    /*--- hover ---*/
+    .card-container .caption {
+        font-size: 1rem;
+    }
+
+    .card-container .description {
+        font-size: .75rem;
+        padding: 0 .5rem .5rem .5rem;
+    }
+
+    .card-container .visit-link {
+        font-size: .75rem;
+        padding: .2rem .6rem;
     }
 }
 
