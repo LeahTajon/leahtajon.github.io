@@ -196,6 +196,7 @@ main {
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--accent-color-black);
+    text-align: center;
 
     background: var(--bgcolor-blue);
     border: 3px solid black!important;
